@@ -25,5 +25,5 @@ opam update -y && opam upgrade -y
 eval $(opam env)
 
 ## install snarky
-opam install -y jbuilder
+opam install -y jbuilder menhir
 opam pin add -y git@github.com:kunxian-xia/snarky.git
