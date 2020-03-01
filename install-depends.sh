@@ -1,5 +1,6 @@
 #!/usr/bin/env bash 
 
+## install prerequisits for snarky 
 sudo apt-get -q update && \
 sudo apt-get --no-install-recommends -q -y install \
     build-essential=12.3 \
@@ -18,3 +19,11 @@ sudo apt-get --no-install-recommends -q -y install \
     python-markdown=2.6.8-1 && \
 sudo apt-get clean && \
 sudo rm -rf /var/lib/apt/lists/*
+
+## 
+opam update -y && opam upgrade -y
+eval $(opam env)
+
+## install snarky
+opam install jbuilder
+opam pin add -y git@github.com:o1-labs/snarky.git

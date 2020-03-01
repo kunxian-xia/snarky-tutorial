@@ -6,4 +6,5 @@ jobs:
         steps: 
             - checkout
             - run: ./install-depends.sh
+            - run: dune build tutorial
                 
