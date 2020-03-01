@@ -1,0 +1,9 @@
+version: 2
+jobs:
+    build:
+        docker: 
+          - image: ocaml/opam2:debian-9-ocaml-4.07
+        steps: 
+            - checkout
+            - run: ./install-depends.sh
+                
