@@ -21,6 +21,7 @@ sudo apt-get clean && \
 sudo rm -rf /var/lib/apt/lists/*
 
 ## 
+git -C /home/opam/opam-repository pull
 opam update -y && opam upgrade -y
 eval $(opam env)
 
