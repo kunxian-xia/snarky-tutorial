@@ -21,9 +21,9 @@ sudo apt-get clean && \
 sudo rm -rf /var/lib/apt/lists/*
 
 ## 
-opam install -y jbuilder
 opam update -y && opam upgrade -y
 eval $(opam env)
 
 ## install snarky
-opam pin add -y git@github.com:o1-labs/snarky.git
+opam install -y jbuilder
+opam pin add -y git@github.com:kunxian-xia/snarky.git
